@@ -10,7 +10,8 @@
 
 游玩预设: 对 `Lyean <https://discord.com/channels/1134557553011998840/1274681338556846101>`_ 的文风魔改
   - :resource:`3.18门之主_田中罗密欧文风且无COT <预设/【Lyean】3.18门之主_田中罗密欧文风且无COT.json>`
-  - 配套正则与 Lyean 3.18 门之主的一样
+  - :resource:`3.17.1_田中罗密欧文风且无COT <预设/【Lyean】3.17.1_田中罗密欧文风且无COT.json>`
+  - 配套正则与原版一样一样
 
 角色设计预设: Lyean_designer_青空莉想做舞台少女的狗 (魔改自 `写卡助手奈亚子 <https://discord.com/channels/1134557553011998840/1300806517339193384>`_)
   - :resource:`预设 <预设/【Lyean】designer_想做舞台少女的狗.json>`
