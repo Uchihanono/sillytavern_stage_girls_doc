@@ -4,4 +4,4 @@
 
 - `discord <https://discord.com/channels/1134557553011998840/1303936998913867836>`_
 - :resource:`角色卡 <角色卡/恩赐之主/恩赐之主.png>`
-- :resource:`世界书源文件 <角色卡/恩赐之主/世界书源文件.zip>`
+- :repository:`源文件 <角色卡/恩赐之主/源文件>`

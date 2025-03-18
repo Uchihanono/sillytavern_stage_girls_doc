@@ -33,6 +33,8 @@ extensions = [
 extlinks = {
     'resource': ('https://gitgud.io/StageDog/tavern_resource/-/raw/main/%s?inline=false', '[资源 %s]'),
     'resource_commit': ('https://gitgud.io/StageDog/tavern_resource/-/raw/%s?inline=false', '[资源 %s]'),
+    'repository': ('https://gitgud.io/StageDog/tavern_resource/-/tree/main/%s', '[仓库 %s]'),
+    'repository_commit': ('https://gitgud.io/StageDog/tavern_resource/-/tree/%s', '[仓库 %s]'),
 }
 
 togglebutton_hint = "点击展开"
