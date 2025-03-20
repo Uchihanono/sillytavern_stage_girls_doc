@@ -75,7 +75,7 @@
         # 千枝子、一果...
         check list:  # 这些变量对应的更新规则
           - Update variables suffixed with '次数' when a corresponding event occurs but don't update them any more during that event
-          - Update variables suffixed with '好感度' according to characters' attitudes towards <user>'s behavior respectively only if they're currently aware of it $(±(3~6); but '好感度' must be capped in 0~100 and remains unchange when it's 100)
+          - Update variables suffixed with '好感度' according to characters' attitudes towards <user>'s behavior respectively only if they're currently aware of it (±(3~6); but '好感度' must be capped in 0~100 and remains unchange when it's 100)
           - Switch variables suffixed with '处女', '受孕' or '被<user>接受感情' between '是' and '否'
           - Increase `心爱露出点数` only when an exposure task is fully completed, decrease it when exchanging goods
       # ^露出系统变量
@@ -424,7 +424,7 @@
     # ...
     check list:  # 这些变量对应的更新规则
       - Update variables suffixed with '次数' when a corresponding event occurs but don't update them any more during that event
-      - Update variables suffixed with '好感度' according to characters' attitudes towards <user>'s behavior respectively only if they're currently aware of it $(±(3~6); but '好感度' must be capped in 0~100 and remains unchange when it's 100)
+      - Update variables suffixed with '好感度' according to characters' attitudes towards <user>'s behavior respectively only if they're currently aware of it (±(3~6); but '好感度' must be capped in 0~100 and remains unchange when it's 100)
       - Switch variables suffixed with '处女', '受孕' or '被<user>接受感情' between '是' and '否'
       - Increase `心爱露出点数` only when an exposure task is fully completed, decrease it when exchanging goods
   # ^露出系统变量
@@ -434,7 +434,7 @@
       - Update variables prefixed with '露出系统' according to current reply's <ExposurePrompt> and plot
   # ^===变量结束===
 
-在 D0 的 "变量更新&状态栏格式强调" 条目中, 我要求 ai 在状态栏之前按照描述的规则分析变量并进行更新 (类似于离的状态栏 COT): (描述格式见于 :ref:`语法规则`, 变种见于 :ref:`变量更新规则的其他写法`)
+在 D0 的 "变量更新&状态栏格式强调" 条目中, 我要求 ai 在状态栏之前按照描述的规则分析变量并进行更新 (类似于离的状态栏 COT): (描述格式见于 :doc:`/tool_and_experience/multiple_status/index`, 变种见于 :ref:`变量更新规则的其他写法`)
 
 .. tabs::
 
@@ -459,7 +459,7 @@
 
     .. code-block:: text
 
-      <Analysis>$(IN ENGLISH$)
+      <Analysis>/*IN ENGLISH, no more than 80 words*/
       ${
       # 计算经过的时间
       - calculate time passed: ...
@@ -472,7 +472,7 @@
 
         # 对该条更新规则对应的变量分别进行分析, 分析时仅依据当前剧情而不考虑以前的情节 (避免重复更新, 因为 ai 不知道以前更新过)
         - analyze corresponding variables that are based on this item, according only to current reply instead of previous plots: ...
-      $}
+      }
       </Analysis>
 
     然后我们让 ai 对变量输出更新语句, 之后我们正则匹配该语句从而更新变量
@@ -483,8 +483,8 @@
       <Analysis>
       具体分析...
       </Analysis>
-      # 经验表明最好有一个 ${old$} 而不是 @${variable$}=${new$}@, 这样 ai 更愿意更新变量
-      @${variable$}=${old$}⇒${new$}@
+      # 经验表明最好有一个 ${old} 而不是 @${variable}=${new}@, 这样 ai 更愿意更新变量
+      @${variable}=${old}⇒${new}@
       ...
       </UpdateVariable>
 
@@ -497,24 +497,24 @@
         format: |-
           <StatusBlock>
           <UpdateVariable>
-          <Analysis>$(IN ENGLISH$)
+          <Analysis>/*IN ENGLISH, no more than 80 words*/
           ${
           - calculate time passed: ...
           - decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes or no
           - analyze every variable based on its `check list`, according only to current reply instead of previous plots: ...
-          $}
+          }
           </Analysis>
-          @${variable$}=${old$}⇒${new$}@
+          @${variable}=${old}⇒${new}@
           ...
           </UpdateVariable>
 
           <small>
           ```yaml
-          ...$(remember to update '特殊状态' and '近期事务'$)
+          .../*remember to update '特殊状态' and '近期事务'*/
           ```
           </small>
           <CharacterStatus>
-          ...$(only output characters currently interacting with <user>; strictly following `状态栏` rule without omitting or reordering items; must update 角色阶段 according to `associated variable`$)
+          .../*only output characters currently interacting with <user>; strictly following `状态栏` rule without omitting or reordering items; must update 角色阶段 according to `associated variable`*/
           </CharacterStatus>
           </StatusBlock>
 
@@ -606,14 +606,14 @@
 .. code-block:: text
 
   <UpdateVariable>
-  <Analysis>$(IN ENGLISH)
+  <Analysis>/*IN ENGLISH, no more than 80 words*/
   ${
   - calculate time passed: ...
   - decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes or no
   - what variables should be updated, accoring only to current reply instead of previous plots: ...
-  $}
+  }
   </Analysis>
-  @${variable$}=${old$}⇒${new$}@ (reason)
+  @${variable}=${old}⇒${new}@ (reason)
   ...
   </UpdateVariable>
 
@@ -626,16 +626,16 @@
 .. code-block:: text
 
   <UpdateVariable>
-  <Analysis>$(IN ENGLISH$)
+  <Analysis>/*IN ENGLISH, no more than 80 words*/
   ${
   - calculate time passed: ...
   - decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes or no
   - update variables suffixed with '次数' when a corresponding event occurs but don't update them any more during that event: ...
-  - Update variables suffixed with '好感度' according to characters' attitudes towards <user>'s behavior respectively only if they're currently aware of it $(±(3~6); but '好感度' must be capped in 0~100 and remains unchange when it's 100): ...
+  - Update variables suffixed with '好感度' according to characters' attitudes towards <user>'s behavior respectively only if they're currently aware of it (±(3~6); but '好感度' must be capped in 0~100 and remains unchange when it's 100): ...
   - switch variables suffixed with '处女', '受孕' or '被<user>接受感情' between '是' and '否': ...
-  $}
+  }
   </Analysis>
-  @${variable$}=${old$}⇒${new$}@
+  @${variable}=${old}⇒${new}@
   ...
   </UpdateVariable>
 
@@ -648,15 +648,15 @@
 .. code-block:: text
 
   <UpdateVariable>
-  <Analysis>$(IN ENGLISH$)
+  <Analysis>/*IN ENGLISH, no more than 80 words*/
   ${
   - calculate time passed: ...
   - decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes or no
   - list every item in every `check list` of `变量` document before actual variable analysis: ...
     - analyze corresponding variables that are based on this item, according only to current reply instead of previous plots: ...
-  $}
+  }
   </Analysis>
-  @${variable$}=${old$}⇒${new$}@
+  @${variable}=${old}⇒${new}@
   ...
   </UpdateVariable>
 
@@ -669,14 +669,14 @@
 .. code-block:: text
 
   <UpdateVariable>
-  ${display every `check list` in `变量` document before actual variable analysis$}
-  <Analysis>$(IN ENGLISH$)
+  ${display every `check list` in `变量` document before actual variable analysis}
+  <Analysis>/*IN ENGLISH, no more than 80 words*/
   ${
   - calculate time passed: ...
   - decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes or no
   - analyze variables based on `check list` according only to current reply instead of previous plots: ...
-  $}
+  }
   </Analysis>
-  @${variable$}=${old$}⇒${new$}@
+  @${variable}=${old}⇒${new}@
   ...
   </UpdateVariable>
