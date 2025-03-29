@@ -145,7 +145,7 @@
 
 .. hint::
 
-  为了使用这个命令, 你需要执行 ``pip3 install python-socketio tornado watchfiles`` 来安装对应的依赖.
+  对于云酒馆, 你可以添加一个 ``世界书名称: xxx`` 设置来直接支持这个功能. 这样你只需要在本地而无需在 vps 里运行脚本.
 
 该命令将会实时监听世界书文件夹的变动, 并在监听好后立即更新酒馆世界书. 如此, 配合 `世界书同步脚本监听器 <https://github.com/StageDog/lorebook_update_listener>`_, 你将能在本地编辑器实时修改世界书脚本——对本地文件进行修改后, 立即就能在酒馆进行测试.
 
