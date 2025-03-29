@@ -7,6 +7,8 @@ SillyTavern 内容 by 青空莉想做舞台少女的狗
   - 转载搬运: 必须经过我同意, 无需署名但需要引用相关链接
   - 商业用途: 禁止
 
+`资源仓库 <https://gitgud.io/SmilingFace/tavern_resource>`_
+
 .. toctree::
   :maxdepth: 1
   :caption: 角色卡
@@ -15,8 +17,6 @@ SillyTavern 内容 by 青空莉想做舞台少女的狗
   character_card/三个女孩各有秘密/index
   character_card/妹妹请求你保护她露出/index
   character_card/呕吐内心的少女/index
-
-以下部分的开源许可证是 Unlicense, 几乎只有一个要求: 改动内容我不负责. 如果需要修改请通过 `资源仓库 <https://gitgud.io/SmilingFace/tavern_resource>`_ 获取自行修改.
 
 .. toctree::
   :maxdepth: 1
