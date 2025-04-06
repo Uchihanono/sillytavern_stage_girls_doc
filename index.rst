@@ -31,6 +31,7 @@ SillyTavern 内容 by 青空莉想做舞台少女的狗
   :caption: 工具&经验
 
   tool_and_experience/misc/index
+  tool_and_experience/activation_of_lorebook_entries/index
   tool_and_experience/variable_in_lorebook_without_qr/index
   tool_and_experience/multiple_status/index
   tool_and_experience/lorebook_script/index
