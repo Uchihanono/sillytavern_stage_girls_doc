@@ -116,6 +116,63 @@
 
 这是因为本教程的方法依赖于局部正则中的变量更新正则, 而仅保留摘要正则一般被放在全局正则中, 因而仅保留摘要正则先于变量更新正则被执行: 在变量更新正则对 ``@变量=值@`` 发生作用而更新变量之前, 仅保留摘要正则已经将 ``@变量=值@`` 去除掉了!
 
+.. hint::
+
+  如果有在玩家互动时更新变量的需求, 请使用 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>` 中的 ``getChatMessage`` 和 ``setChatMessage`` 将内容附在 ai 消息末尾.
+
+  .. admonition:: 本教程在酒馆助手中的更新函数
+    :class: dropdown
+
+    .. code-block:: typescript
+      :linenos:
+
+      /**
+       * 在最后一条 ai 消息附加 `@变量=值@` 从而更新变量
+       *
+       * @param data 要更新的变量和值
+       *
+       * @example
+       * await updateLastVariables({
+       *   '变量.络络.亲密度': 60,
+       *   '变量.络络.下次响应界面选择判断': 2,
+       * });
+       */
+      async function updateLastVariables(data: Record<string, any>) {
+        const last_char_message_id = await getChatMessages('0-{{lastMessageId}}', { role: 'assistant' }).then(
+          messages => messages[-1].message_id,
+        );
+        await updateVariablesAt(last_char_message_id, data);
+      }
+
+      /**
+       * 在第 `message_id` 楼消息附加 `@变量=值@` 从而更新变量
+       *
+       * @param message_id 消息楼层号, 必须确保是 ai 消息才能正确更新
+       * @param data 要更新的变量和值
+       *
+       * @example
+       * await updateVariablesAt(0, {
+       *   '变量.络络.亲密度': 60,
+       *   '变量.络络.下次响应界面选择判断': 2,
+       * });
+       */
+      async function updateVariablesAt(message_id: number, data: Record<string, any>) {
+        const messages = await getChatMessages(message_id, { role: 'assistant' });
+        if (messages.length > 0) {
+          return;
+        }
+
+        const message = messages[0].message;
+        await setChatMessage(
+          {
+            message: message + Object.entries(data).map(([key, value]) => `\n@${key}=${value}@`),
+          },
+          message_id,
+          { refresh: 'none' },
+        );
+      }
+
+
 ------------------------------------------------------------------------------------------------------------------------
 如果在 ai 消息以外的地方更新变量
 ------------------------------------------------------------------------------------------------------------------------
