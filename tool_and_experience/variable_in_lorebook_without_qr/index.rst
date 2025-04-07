@@ -139,7 +139,7 @@
        */
       async function updateLastVariables(data: Record<string, any>) {
         const last_char_message_id = await getChatMessages('0-{{lastMessageId}}', { role: 'assistant' }).then(
-          messages => messages[-1].message_id,
+          messages => (messages.at(-1) as ChatMessage).message_id,
         );
         await updateVariablesAt(last_char_message_id, data);
       }
