@@ -118,7 +118,7 @@
 
 .. hint::
 
-  如果有在玩家互动时更新变量的需求, 请使用 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>` 中的 ``getChatMessage`` 和 ``setChatMessage`` 将内容附在 ai 消息末尾.
+  如果有在玩家互动时更新变量的需求, 请使用 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>`_ 中的 ``getChatMessage`` 和 ``setChatMessage`` 将内容附在 ai 消息末尾.
 
   .. admonition:: 本教程在酒馆助手中的更新函数
     :class: dropdown
