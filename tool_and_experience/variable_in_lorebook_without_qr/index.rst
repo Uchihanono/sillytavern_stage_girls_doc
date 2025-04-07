@@ -158,7 +158,7 @@
        */
       async function updateVariablesAt(message_id: number, data: Record<string, any>) {
         const messages = await getChatMessages(message_id, { role: 'assistant' });
-        if (messages.length > 0) {
+        if (messages.length <= 0) {
           return;
         }
 
