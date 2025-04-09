@@ -72,6 +72,6 @@ $(() => {
   // 快速回复中可使用 `/event-emit event=检测输入中的变量更新并发送新的玩家输入 "@变量1=值@@变量2=值data="玩家输入"` 来更新变量并发送新消息
   eventOn('检测输入中的变量更新进行更新并发送新的玩家输入', async (text: string) => {
     await updateLastVariables(parseVariables(text));
-    triggerSlash(`/send ${text.replaceAll(variable_regex, '').replace('^@', '').trim()} || /trigger`);
+    triggerSlash(`/send ${text.replaceAll(variable_regex, '').replace(/^@/, '').trim()} || /trigger`);
   });
 });
