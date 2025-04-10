@@ -110,3 +110,19 @@
       <StatusBlock>
       ...(严格按照${要求}输出角色状态栏的所有内容，禁止遗漏或调换顺序)
       </StatusBlock>
+
+========================================================================================================================
+强调语法规则
+========================================================================================================================
+
+Gemini 2.5 pro 偶尔会不理解 ``${...}`` 等格式而直接输出它们, 为此你可以在 D0 放置以下规则:
+
+.. code-block:: yaml
+
+  语法规则:
+    rule: you MUST obey following grammars when output according to a `format` mapping
+    grammar:
+      - you should replace ${description} with output described in description
+      - you should follow additional requirements in /*requirement*/ but never ever output it
+      - you may output additional content according to former rules and content when encountering ...
+      - you should output others directly without any modification
