@@ -194,6 +194,22 @@
   - 其他地方的代码可使用 ``eventEmit('在最新楼层更新变量', {心爱受孕: 否, 心爱好感度: 10})`` 来更新变量.
   - 快速回复中可使用 ``/event-emit event=在最新楼层更新变量 data={"心爱受孕": "否", "心爱好感度": 10}`` 来更新变量
 
+  这样一来, 哪怕在提示词模板中, 你也可以这样更新变量:
+
+  .. code-block:: javascript
+    :linenos:
+
+    <%_
+    async function 更新变量(data) {
+      await SillyTavern.eventSource.emit('在最新楼层更新变量', data);
+      await Promise.all(Object.entries(data).map(([key, value]) => setvar(key, value)));
+    }
+
+    if (满足了某个条件) {
+      await 更新变量({'心爱好感度': 10});
+    }
+    _%>
+
 在最后一条消息附加 ``@变量=值@`` 从而更新变量
   ``async function updateLastVariables(data: Record<string, any>)``
 
