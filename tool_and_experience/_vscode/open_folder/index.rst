@@ -8,7 +8,7 @@
 
 按照需要下载你要用的文件夹压缩包
   - :resource:`世界书分文件同步脚本 <_archive/lorebook_script.zip>`
-  - :resource:`前端助手编写 <_archive/frontend_writer.zip>`
+  - :resource:`酒馆助手编写 <_archive/frontend_writer.zip>`
 
 下载完成后, **记得解压缩! 记得解压缩! 记得解压缩!**
 
