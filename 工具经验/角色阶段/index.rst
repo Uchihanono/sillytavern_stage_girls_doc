@@ -138,7 +138,7 @@
 
 **如果你只在 ai 消息中按教程的方法让 ai 更新变量, 那么这不会有什么问题.**
 
-但如果你想在与玩家互动时更新变量, 想在玩家输入中更新变量, 想用代码控制变量更新……那么你应该安装 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>`_, 在酒馆助手局部脚本中新建一个脚本, 内容填写为 ``import https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/正则替换变量法辅助/index.js``. :repository:`点此查看脚本源代码 <酒馆助手/正则替换变量法辅助>`.
+但如果你想在与玩家互动时更新变量, 想在玩家输入中更新变量, 想用代码控制变量更新……那么你应该安装 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>`_, 在酒馆助手局部脚本中新建一个脚本, 内容填写为 ``import 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/正则替换变量法辅助/index.js'``. :repository:`点此查看脚本源代码 <酒馆助手/正则替换变量法辅助>`.
 
 .. hint::
 
