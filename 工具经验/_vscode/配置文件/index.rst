@@ -12,7 +12,7 @@
 导入配置文件
 ========================================================================================================================
 
-点击下载 :resource:`VSCode 配置文件 <工具经验/sillytavern.code-profile>`.
+点击下载 :resource:`VSCode 配置文件 <src/工具经验/sillytavern.code-profile>`.
 
 点击窗口左下角的 :menuselection:`齿轮`, 然后点击 :menuselection:`配置文件(Profiles) --> 配置文件(Profiles)`.
 

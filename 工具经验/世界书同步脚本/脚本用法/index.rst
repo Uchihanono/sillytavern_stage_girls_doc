@@ -152,7 +152,7 @@
 具体地:
 
 - 执行 ``pip3 install python-socketio tornado watchfiles`` 来安装对应的依赖.
-- 安装 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>`_, 然后导入 :resource:`此角色卡 <插件/世界书同步脚本监听器/世界书同步脚本监听器.png>`; 如果酒馆助手安装无误, 导入后将会提示安装 "世界书同步脚本监听器" 插件.
+- 安装 `酒馆助手 <https://n0vi028.github.io/JS-Slash-Runner-Doc/>`_, 然后导入 :resource:`此角色卡 <src/插件/世界书同步脚本监听器/世界书同步脚本监听器.png>`; 如果酒馆助手安装无误, 导入后将会提示安装 "世界书同步脚本监听器" 插件.
 - 使用 ``python tavern_sync.py watch 恩赐之主`` 来开启监听服务器, 记住一开始显示的监听地址 (默认为 ``http://localhost:6620``).
 - 在扩展设置中找到 :menuselection:`世界书同步脚本监听器`, 填入该地址并启用插件.
 - 这样, 你以后只需要使用 ``python tavern_sync.py watch 恩赐之主``, 就能开启实时修改功能了.
