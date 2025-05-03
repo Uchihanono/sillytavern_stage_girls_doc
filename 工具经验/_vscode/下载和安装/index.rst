@@ -34,8 +34,8 @@
 
 - Visual Studio Code (Microsoft.VisualStudioCode): 要使用的代码编辑器
 - Git (Git.Git): 代码库管理
-- NodeJS 22 (OpenJS.NodeJS.LTS): :doc:`/工具经验/酒馆助手/index` 必须
-- pnpm (pnpm.pnpm): :doc:`/工具经验/酒馆助手/index` 必须
+- NodeJS 22 (OpenJS.NodeJS.LTS): :doc:`/工具经验/酒馆助手编写环境配置/index` 必须
+- pnpm (pnpm.pnpm): :doc:`/工具经验/酒馆助手编写环境配置/index` 必须
 - Python (Python.Python.3.13): :doc:`/工具经验/世界书同步脚本/index` 必须
 - yq (MikeFarah.yq): :doc:`/工具经验/世界书同步脚本/index` 必须
 - ClangFormat (LLVM.ClangFormat): :doc:`/工具经验/世界书同步脚本/index` 必须

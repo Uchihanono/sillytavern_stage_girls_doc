@@ -8,6 +8,7 @@
 
 按照需要下载你要用的文件夹压缩包
   - :resource:`世界书分文件同步脚本 <archive/lorebook_script.zip>`
+  - :resource:`酒馆助手编写环境配置 <archive/tavern_helper_template.zip>`
 
 下载完成后, **记得解压缩! 记得解压缩! 记得解压缩!**
 
