@@ -30,8 +30,9 @@
 
 .. raw:: html
 
-  <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/酒馆助手编写环境配置/开关世界书.mp4" controls>
-  </video>
+  <figure class="align-default">
+    <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/酒馆助手编写环境配置/开关世界书.mp4" controls />
+  </figure>
 
 怎么会这样? 让我们点击消息楼层右上角的 :guilabel:`铅笔` 看看该楼层实际的文本……等等, 这段文本根本没有什么特殊的地方?!
 

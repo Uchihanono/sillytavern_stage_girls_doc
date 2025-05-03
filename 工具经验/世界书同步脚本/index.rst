@@ -6,7 +6,9 @@
 
 .. raw:: html
 
-  <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/世界书同步脚本/演示.mp4" controls />
+  <figure class="align-default">
+    <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/世界书同步脚本/演示.mp4" controls />
+  </figure>
 
 下面内容要依次看完.
 
@@ -14,6 +16,6 @@
   :maxdepth: 1
   :caption: 目录
 
-  ../cursor/index
+  ../_vscode/index
   脚本用法/index
   文件格式/index

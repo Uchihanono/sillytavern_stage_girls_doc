@@ -8,8 +8,9 @@
 
 .. raw:: html
 
-  <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/酒馆助手编写环境配置/实时修改.mp4" controls>
-  </video>
+  <figure class="align-default">
+    <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/酒馆助手编写环境配置/实时修改.mp4" controls />
+  </figure>
 
 .. toctree::
   :maxdepth: 1

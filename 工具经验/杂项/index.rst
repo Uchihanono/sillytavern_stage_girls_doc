@@ -58,7 +58,9 @@
 
   .. raw:: html
 
-    <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/流式传输/演示.mp4" controls />
+    <figure class="align-default">
+      <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/流式传输/演示.mp4" controls />
+    </figure>
 
 实时修改css
   - :resource:`说明和内容在角色卡中 <src/酒馆助手/实时修改css/实时修改css.png>`
@@ -66,7 +68,9 @@
 
   .. raw:: html
 
-    <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/实时修改css/演示.mp4" controls />
+    <figure class="align-default">
+      <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/实时修改css/演示.mp4" controls />
+    </figure>
 
 正则替换变量法辅助
   - 具体见于 :ref:`正则替换变量法辅助`.
@@ -77,7 +81,9 @@
 
   .. raw:: html
 
-    <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/自动安装插件/演示.mp4" controls />
+    <figure class="align-default">
+      <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/自动安装插件/演示.mp4" controls />
+    </figure>
 
 ========================================================================================================================
 快速回复
