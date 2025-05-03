@@ -34,7 +34,8 @@
 
 - Visual Studio Code (Microsoft.VisualStudioCode): 要使用的代码编辑器
 - Git (Git.Git): 代码库管理
-- NodeJS 22 (OpenJS.NodeJS.LTS): :doc:`/工具经验/js_slash_runner/index` 必须
+- NodeJS 22 (OpenJS.NodeJS.LTS): :doc:`/工具经验/酒馆助手/index` 必须
+- pnpm (pnpm.pnpm): :doc:`/工具经验/酒馆助手/index` 必须
 - Python (Python.Python.3.13): :doc:`/工具经验/世界书同步脚本/index` 必须
 - yq (MikeFarah.yq): :doc:`/工具经验/世界书同步脚本/index` 必须
 - ClangFormat (LLVM.ClangFormat): :doc:`/工具经验/世界书同步脚本/index` 必须
@@ -42,7 +43,7 @@
 .. code-block:: bash
   :caption: 将会依次安装 VSCode、Git、Python、..., 也许可以去掉电脑上已经有的?
 
-  winget install Microsoft.VisualStudioCode Git.Git Python.Python.3.13 OpenJS.NodeJS.LTS MikeFarah.yq LLVM.ClangFormat
+  winget install Microsoft.VisualStudioCode Git.Git Python.Python.3.13 OpenJS.NodeJS.LTS pnpm.pnpm MikeFarah.yq LLVM.ClangFormat
 
 .. hint::
   里面的部分组件的安装可能需要重启才能生效, 如果在后续流程中出现 ``找不到yq`` 等问题, 建议重启再试试哦。

@@ -35,4 +35,4 @@ SillyTavern 内容 by 青空莉想做舞台少女的狗
   工具经验/角色阶段/index
   工具经验/省token的专属状态栏/index
   工具经验/世界书同步脚本/index
-  工具经验/js_slash_runner/index
+  工具经验/酒馆助手编写环境配置/index
