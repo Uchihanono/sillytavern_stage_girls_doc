@@ -195,3 +195,52 @@
 .. figure:: pnpm_build.png
 
 最后, 我们前往 ``dist`` 文件夹复制文件内容, 手动粘贴到脚本或界面文件中. 需要注意的是, 对于界面, 你需要在它上面和下面手动加上 :code:`\`\`\``.
+
+========================================================================================================================
+小技巧
+========================================================================================================================
+
+既然酒馆助手允许你用代码进行处理, 那么界面正则的正则表达式只需要负责能匹配到文本就好, 至于匹配到的文本则可以完全交由代码处理:
+
+.. tabs::
+
+  .. tab:: 相比于
+
+    .. code-block::
+      :caption: 正则表达式
+
+      /<status>衣着[:：](.*?)行为[:：](.*?)<\/status>/s
+
+    .. code-block:: html
+      :caption: 替换为
+
+      <html>
+      <body>
+        <span>$1</span>
+        <span>$2</span>
+        <script>
+          const text = $0;
+        </script>
+      </body>
+      </html>
+
+  .. tab:: 你应该
+
+    .. code-block::
+      :caption: 正则表达式
+
+      /<status>.*?<\/status>/s
+
+    .. code-block::
+      :caption: 替换为
+
+      <html>
+      <body>
+        <script>
+          const chat_message = getChatMessages(getCurrentMessageId())[0];
+          const message = chat_message.message;
+          const text = message.match(/<status>(.*?)<\/status>/s)[1];
+          // 对文本进行进一步解析……
+        </script>
+      </body>
+      </html>
