@@ -29,8 +29,8 @@
 
 通过 https://www.jsdelivr.com/, 你可以将一些第三方库乃至 github 上的文件以链接的形式加载, 从而避免在多个脚本或界面中重复打包它们.
 
-需要注意的是, 你应该用 https://gcore.jsdelivr.net 这个国内也能访问的镜像, 而不是直接用 https://cdn.jsdelivr.net.
+需要注意的是, 你应该用 https://testingcf.jsdelivr.net 这个国内也能访问的镜像, 而不是直接用 https://cdn.jsdelivr.net.
 
 .. hint::
 
-  你甚至可以直接将你的脚本或界面上传到 github, 进而利用这个网站的链接让玩家能始终加载最新脚本或界面, 酒馆助手内置库即采用了这种方法. 如标签化为 ``import 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/标签化/index.js'``.
+  你甚至可以直接将你的脚本或界面上传到 github, 进而利用这个网站的链接让玩家能始终加载最新脚本或界面, 酒馆助手内置库即采用了这种方法. 如标签化为 ``import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/标签化/index.js'``.
