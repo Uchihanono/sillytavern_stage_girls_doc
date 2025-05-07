@@ -237,7 +237,7 @@
       <html>
       <body>
         <script>
-          const chat_message = getChatMessages(getCurrentMessageId())[0];
+          const chat_message = (await getChatMessages(getCurrentMessageId()))[0];
           const message = chat_message.message;
           const text = message.match(/<status>(.*?)<\/status>/s)[1];
           // 对文本进行进一步解析……
