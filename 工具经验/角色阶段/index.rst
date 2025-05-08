@@ -146,7 +146,7 @@
 
 .. code-block:: typescript
 
-  import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/正则替换变量法辅助/index.js'
+  import 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/正则替换变量法辅助/index.js'
 
 .. hint::
 
