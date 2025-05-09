@@ -33,4 +33,4 @@
 
 .. hint::
 
-  你甚至可以直接将你的脚本或界面上传到 github, 进而利用这个网站的链接让玩家能始终加载最新脚本或界面, 酒馆助手内置库即采用了这种方法. 如标签化为 ``import 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/标签化/index.js'``.
+  你甚至可以直接将你的脚本或界面上传到 github, 进而利用这个网站的链接让玩家能始终加载最新脚本或界面, 酒馆助手内置库即采用了这种方法. 如标签化为 ``import 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource@latest/dist/酒馆助手/标签化/index.js'``.
