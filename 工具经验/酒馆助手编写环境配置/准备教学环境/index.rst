@@ -10,9 +10,9 @@
 
   如果你没有遵循我在上一步提供的环境配置教程, 请至少确认安装了对应的软件. 尤其是, 你的 node 版本必须大于 22, 否则将无法正常运行本项目.
 
-请从 cursor 左上角打开 tavern_helper_template 文件夹, 注意如果 tavern_helper_template 里嵌套了一个 tavern_helper_template 文件夹, 则应该开内层那个.
+请从 VSCode 或 Cursor 左上角打开 tavern_helper_template 文件夹, 注意如果 tavern_helper_template 里嵌套了一个 tavern_helper_template 文件夹, 则应该开内层那个.
 
-然后, 按之前说过的方式切换 Cursor 配置文件为 sillytavern.
+然后, 按之前说过的方式切换 VSCode 或 Cursor 配置文件为 sillytavern.
 
 .. figure:: 打开文件夹并切换配置文件.png
 

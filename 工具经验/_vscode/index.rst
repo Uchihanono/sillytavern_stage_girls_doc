@@ -10,3 +10,5 @@
   配置文件/index
   打开文件夹/index
   cursor/index
+  cline/index
+  让ai能看见酒馆网页/index
