@@ -20,7 +20,7 @@ AI 辅助.使用 Cline
 
 .. figure:: 配置API.png
 
-其中 Custom Instructions 部分应该填写:
+其中 Custom Instructions 部分应该填写 (见于 `Cline 的文档 <https://github.com/cline/cline/blob/main/docs/prompting/cline-memory-bank.mdx>`_):
 
 .. admonition:: Custom Instructions
   :class: dropdown
