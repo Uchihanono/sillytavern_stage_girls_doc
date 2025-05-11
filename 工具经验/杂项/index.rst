@@ -45,6 +45,7 @@
   - 标签化: 根据预设自动开关正则、根据模型自动切换破限
   - 样式加载：像酒馆美化一样控制角色卡楼层美化
   - 资源预载：提前缓存角色卡的插图
+  - 预设防误触
   - 自动关闭前端卡不兼容选项
   - 自动开启角色卡局部正则
 
@@ -70,6 +71,20 @@
 
     <figure class="align-default">
       <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/实时修改css/演示.mp4" controls />
+    </figure>
+  
+文生图
+  - ``import 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/文生图/index.js'``
+  - :repository:`源文件 <src/酒馆助手/文生图>`
+
+显示区间消息
+  - ``import 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/显示区间消息/index.js'``
+  - :repository:`源文件 <src/酒馆助手/显示区间消息>`
+
+  .. raw:: html
+
+    <figure class="align-default">
+      <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/酒馆助手/显示区间消息/演示.mp4" controls />
     </figure>
 
 正则替换变量法辅助
