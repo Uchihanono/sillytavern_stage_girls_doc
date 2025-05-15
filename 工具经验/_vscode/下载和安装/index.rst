@@ -23,34 +23,21 @@
 
 在弹出的窗口中输入以下命令并 :KBD:`回车`:
 
-.. hint::
-
-  - 鼠标放在下面代码块的右上角, 有个按钮可以点击复制命令!
-  - 注意不要用快捷键 :KBD:`Ctrl-V` 在弹出的窗口中粘贴, 而是要用 :KBD:`右键` 或 :KBD:`右键-Paste` 粘贴!
-  - 输入命令后不要忘记 :KBD:`回车`!
-  - 如果安装很慢, 请确保梯子开启了 tun mode 或类似的功能!
-
-下面的脚本将会依次安装以下的组件, 如果本地已安装 **并将其增加到 PATH 环境变量中**, 则可以酌情跳过:
-
-- Visual Studio Code (Microsoft.VisualStudioCode): 要使用的代码编辑器
-- Git (Git.Git): 代码库管理
-- NodeJS 22 (OpenJS.NodeJS.LTS): :doc:`/工具经验/酒馆助手编写环境配置/index` 必须
-- pnpm (pnpm.pnpm): :doc:`/工具经验/酒馆助手编写环境配置/index` 必须
-- Python (Python.Python.3.13): :doc:`/工具经验/世界书同步脚本/index` 必须
-- yq (MikeFarah.yq): :doc:`/工具经验/世界书同步脚本/index` 必须
-- ClangFormat (LLVM.ClangFormat): :doc:`/工具经验/世界书同步脚本/index` 必须
-
 .. code-block:: bash
   :caption: 将会依次安装 VSCode、Git、Python、..., 也许可以去掉电脑上已经有的?
 
   winget install Microsoft.VisualStudioCode Git.Git Python.Python.3.13 OpenJS.NodeJS.LTS pnpm.pnpm MikeFarah.yq LLVM.ClangFormat
 
 .. hint::
-  里面的部分组件的安装可能需要重启才能生效, 如果在后续流程中出现 ``找不到yq`` 等问题, 建议重启再试试哦
+
+  - 鼠标放在下面代码块的右上角, 有个按钮可以点击复制命令!
+  - 注意不要用快捷键 :KBD:`Ctrl-V` 在弹出的窗口中粘贴, 而是要用 :KBD:`右键` 或 :KBD:`右键-Paste` 粘贴!
+  - 输入命令后不要忘记 :KBD:`回车`!
+  - 如果安装很慢, 请确保梯子开启了 tun mode (虚拟网卡) 或类似的功能!
 
 .. hint::
 
-  此后, 你可以重复以上命令来升级它们.
+  里面的部分组件的安装可能需要重启才能生效, 如果在后续流程中出现 ``找不到yq`` 等问题, 建议重启再试试哦
 
 .. figure:: 输入winget安装命令.png
 
@@ -65,12 +52,6 @@
   set-executionpolicy remotesigned
 
 .. figure:: 执行策略更改.png
-
-关闭并重新打开 ``powershell``, 输入以下命令并 :KBD:`回车`:
-
-.. code-block:: bash
-
-  npm install -g typescript
 
 ========================================================================================================================
 安装字体 (非必需, 但建议安装!!!)
