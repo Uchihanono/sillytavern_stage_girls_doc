@@ -10,6 +10,10 @@
     <video src="https://gitgud.io/StageDog/tavern_resource/-/raw/main/src/工具经验/世界书同步脚本/演示.mp4" controls />
   </figure>
 
+.. hint::
+
+  **重制测试版在 `这里 <https://discord.com/channels/1291925535324110879/1346956298004205630/1367264637195649034>`**.
+
 下面内容要依次看完.
 
 .. toctree::
